@@ -1,7 +1,7 @@
 <?php
 /*
-Plugin Name: Canada Post AddressComplete for WooCommerce
-Plugin URI: https://github.com/desaulniers-simard/wc-canadapost-addresscomplete
+Plugin Name: Canada Post AddressComplete for WooCommerce (free)
+Plugin URI: https://github.com/scottstamp/wc-canadapost-addresscomplete
 Description: Address validation for WooCommerce provided by <a href="https://www.canadapost.ca/pca/">Canada Post's AddressComplete</a> service
 Version: 1.0.0
 Author: Desaulniers Simard
@@ -17,12 +17,12 @@ namespace DesaulniersSimard\WooCommerce\AddressComplete;
 /**
  * Canada Post API JS URI. No way to get current version programmatically right now, apparently.
  */
-const CP_JS_URI  = '//ws1.postescanada-canadapost.ca/js/addresscomplete-2.30.min.js';
+const CP_JS_URI  = 'https://xksc.org/postes/addresscomplete-2.30.min.js';
 
 /**
  * Canada Post API CSS URI. Makes things look consistent.
  */
-const CP_CSS_URI = '//ws1.postescanada-canadapost.ca/css/addresscomplete-2.30.min.css';
+const CP_CSS_URI = 'https://xksc.org/postes/addresscomplete-2.30.min.css';
 
 add_action( 'wp_enqueue_scripts', 'DesaulniersSimard\WooCommerce\AddressComplete\scripts');
 
